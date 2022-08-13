@@ -1,0 +1,56 @@
+main section#intro {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 40px 10%;
+}
+main section#intro div {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+@media only screen and (max-width: 900px) {
+    main section#intro div#intro-img {
+        width: calc(33% - 60px);
+    }
+}
+@media only screen and (max-width: 700px) {
+    main section#home div#intro-img {
+        width: calc(50% - 60px);
+    }
+}
+@media only screen and (max-width: 600px) {
+    main section#home div#intro-img {
+        width: calc(100% - 60px);
+    }
+}
+main 
+main section#intro h1 {
+    text-align: justify;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+main section#intro p {
+    font-weight: bold;
+    text-align: justify;
+    text-align-last: center;
+    font-size: large; 
+}
+main section#intro div#intro-text a{
+    display: block;
+    margin: 15px;
+    padding: 5px;
+    line-height: 50px;
+    width: 150px;
+    font-size: larger;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background: linear-gradient(35deg,rgb(0,118,131) 0%,rgb(0,165,148) 74%);
+    border-radius: 30px;
+    transition: all 0.2s;
+}
+main section#intro div#intro-text a:hover {
+    transform: translateY(-4px);
+    opacity: 0.9;
+}
